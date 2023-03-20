@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { client } from '../../../libs/client';
+import { client } from '../../../src/libs/client';
 import type { MicroCMSObjectContent, MicroCMSListResponse } from 'microcms-js-sdk';
 
 type Post = {
