@@ -33,12 +33,9 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/*GillSansMTPro-LightItalic / */
+/* TsukuAOldMinPr6N-R */
 div, h1, h2, h3, h4, h5, h6, p, a, span, button {
-    font-family: goudy-old-style, TsukuAOldMinPr6N-R, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho',
-    '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
-    font-family: "VNTN", TsukuAOldMinPr6N-R, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho',
-    '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
+    font-family: "VNTN", TsukuAOldMinPr6-M, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho', '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
     font-weight: 400;
     color: var(--textColor);
     font-display: swap;
@@ -113,7 +110,7 @@ section {padding: 0 var(--padding);}
         --padding: 12.5vw;
     }
 
-    html {font-size: 62.5%;}
+    html {font-size: 56.5%;}
     .h0 {font-size: 5.6rem;}
     h1, .h1 {font-size: 2.4rem;}
     h2, .h2 {font-size: 2.2rem;}
@@ -123,7 +120,7 @@ section {padding: 0 var(--padding);}
     h6, .h6 {font-size: 1.4rem;}
     .h7 {font-size: 1.2rem;}
     p, .p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: left;
     }
     .sp {display: none;}
@@ -132,12 +129,13 @@ section {padding: 0 var(--padding);}
     section {
         padding-left: var(--pcSectionPadding);
     }
-
-
-
-
-
 }
 
+@media screen and (min-width: 1280px) {
+    html {font-size: 62.5%;}
+}
 
+@media screen and (min-width: 1640px) {
+    html {font-size: 70.5%;}
+}
 
