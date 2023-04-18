@@ -27,7 +27,6 @@ $: currentRoute = $page.url.pathname;
     <PageTransition pathname={data.pathname}>
       <slot />
     </PageTransition>
-    <Footer />
 
 </div>
   

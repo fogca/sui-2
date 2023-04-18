@@ -1,12 +1,16 @@
 <svelte:window on:scroll={scrollToWorks} />
 <script>
     import { slide } from 'svelte/transition';
+    import { browser } from '$app/environment';
+    import { page } from '$app/stores';
+
     import Saos from "saos";
     import Logo from './Logo.svelte';
     import LogoVert from './LogoVert.svelte';
     import TextLogo from './TextLogo.svelte';
     import LogoA from './Logo@.svelte';
-    import { browser } from '$app/environment';
+    import Menu from './Menu.svelte';
+
 
     let clicked = false;
 	let isExpanded = false
@@ -43,6 +47,9 @@
         }
         
     }
+
+$: $page.url && (isExpanded = false);
+$: $page.url && (clicked = false);
 	
 </script>
 
@@ -74,24 +81,50 @@
 
     <div class="flex-header">
         <div class="top">
-            <LogoVert />
+            <a href="/projects" class="h4" lang="en">scent projects</a>
         </div>
 
         <div class="bottom">
-            <ul>
-                <li><a href="/projects">プロジェクト</a></li>
-                <li><a href="/news">展示のお知らせ</a></li>
-                <li><a href="/">お問い合わせ</a></li>
-            </ul>
+            <a href="/projects" class="h4" lang="en">online store</a>
+        
+            <div class="open-button sp" style="display:none;"
+                class:clicked={clicked} 
+                on:click="{() => clicked = !clicked}" 
+                on:click|preventDefault={clickHandler}>
+                <span></span><span></span>
+            </div>
         </div>
     </div>
+
 </header>
+
+{#if isExpanded}
+<Menu />
+{/if}
+
+
+
+  
+
 
 <style>
 
+.flex-header a {
+    text-orientation: sideways;
+    writing-mode: vertical-rl;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom a {margin-bottom: 0rem;}
+
+
 header {
     opacity: 0;
-    width: var(--padding);
+    width: calc(.9 * var(--padding));
     height: 100vh;
     height: 100dvh;
     position: fixed;
@@ -156,6 +189,24 @@ header .pattern svg {
     width: auto;
     height: 120vh;
 }
+
+
+
+.open-button {margin-top: .8rem;}
+.open-button span {
+    width: 2rem;
+    height: 1.05px;
+    border-radius: 10px;
+    background-color: black;
+    display: block;
+    transition: 2.5s ease-in-out;
+}
+.open-button span:nth-of-type(1) {margin-bottom: .6rem;}
+.open-button.clicked span:nth-of-type(1) {transform: rotate(20deg) translateY(4.0px) scale(1.2);}
+.open-button.clicked span:nth-of-type(2) {transform: rotate(-20deg) translateY(-4.0px) scale(1.2);}
+
+
+
 
 
 @keyframes -global-header-logo {

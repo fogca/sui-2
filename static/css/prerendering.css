@@ -29,6 +29,7 @@ header .top svg {
 }
 
 
+#index-top .swiper-pagination,
 #index-fourth .swiper-pagination {
     text-align: left;
     display: flex;
@@ -36,8 +37,10 @@ header .top svg {
     left: calc(var(--padding) - 5px);
     bottom: 4rem;
 }
+#index-top .swiper-pagination span,
 #index-fourth .swiper-pagination span {margin-top: 1.2rem;}
 
+#index-top .swiper-pagination-bullet,
 #index-fourth .swiper-pagination-bullet {
     background-color: transparent;
     background-image: url(../image/bullet.svg);
@@ -48,6 +51,7 @@ header .top svg {
     height: 9.5px;
     opacity: .3;
 }
+#index-top .swiper-pagination-bullet-active,
 #index-fourth .swiper-pagination-bullet-active {opacity: 1;}
   
 

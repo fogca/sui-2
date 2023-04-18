@@ -9,6 +9,7 @@ import Hyphen from '../components/Hyphen.svelte';
 import Exhibition from '../components/Exhibition.svelte';
 import Artpiece from '../components/Artpiece.svelte';
 import Sign from '../components/Sign.svelte';
+import Visual from '../components/Visual.svelte';
 import Saos from 'saos';
 import { onMount } from "svelte";
 import { browser } from "$app/environment";
@@ -138,6 +139,14 @@ onMount(() => {
 
 	<div class="bg-washi"></div>
 	<section id="index-top">
+
+		<div class="wrapper">
+			<Visual />
+		</div>
+
+
+
+
 		<!--
 		<div class="wrapper">
 			<ul class="white">
@@ -305,7 +314,7 @@ onMount(() => {
 
 <style>
 
-.index section {padding-left: calc(2 * var(--padding));}
+.index section {padding-left: calc(1.9 * var(--padding));}
 #index-top {visibility: hidden;}
 @keyframes -global-zooming {
 	0% {opacity: 0;
@@ -365,23 +374,10 @@ section {position: relative;}
     display: flex;
     align-items: flex-end;
 	justify-content: space-between;
-    padding-bottom: 7.5rem;
-	background-image: url('../image/sui_2023.jpg');
-	background-image: url(/image/keyvisual.jpg);
-	background-image: url(/image/essence.jpg);
-	background-size: cover;
+    padding-left: 0;
 }
-#index-top svg {margin-right: -2rem;}
-
-#index-top ul li {margin-top: 2.5rem;}
-#index-top ul li h2 {text-transform: lowercase;}
-
-
 #index-first .section-head {margin-bottom: 3.5rem;}
 #index-first .wrapper p {margin: 1.2rem 0 5rem;}
-
-
-
 
 
 #index-second .section-head {margin-bottom: 6rem;}
@@ -435,6 +431,8 @@ section {position: relative;}
 
 #index-fifth {
 	padding-top: 12rem;
+	padding-left: 18vw;
+	padding-right: 5vw;
 	padding-bottom: 15rem;
 	background-image: url(/image/bg.webp);
 	background-size: cover;
@@ -448,13 +446,16 @@ section {position: relative;}
 #index-fifth .paragraph p {
 	line-height: 2.8;
 	margin-bottom: 1.6rem;
+	font-size: 1.3rem;
+    letter-spacing: .25em;
 }
 #index-fifth .sign {margin-top: 5rem;}
 
 
 #index-sixth {
 	width: 100vw;
-	padding: 10rem var(--padding) 5rem;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 	background-image: url('../image/sui_2023.jpg');
 	background-image: url(/image/kv.webp);
 	background-size: cover;
