@@ -96,7 +96,7 @@ onMount(() => {
 </svelte:head>
 
 
-<main>
+<main class="index">
 
 	<nav class="index-header pc">
 		<ul>
@@ -168,9 +168,9 @@ onMount(() => {
 		<h2 class="h3">心を澄まして<br>聞くかほり</h2>
 		<p>素材との出会い、抽出、調香まで<br>
 			小さないのちに内在する響きから<br>
-			季節や風土のめぐりに触れる香りづくり
+			季節や風土のめぐりに触れる<br class="sp">香りづくり
 		</p>
-		<a href="/" class="h5" lang="en">gallery</a>
+		<a href="/projects" class="h5" lang="en">projects</a>
 	  </div>
 	  </Saos>
 	</section>
@@ -178,6 +178,7 @@ onMount(() => {
 	<section id="index-second">
 
 	  <div class="bg">
+		<div class="wrapper">
 		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 			<div class="section-head white">
 			  <div class="h4" lang="en">02.</div>
@@ -206,6 +207,7 @@ onMount(() => {
 			<p>体験や空間が纏う空気を掬い<br>ともに奏でるコラボレーション</p>
 	  	</div>
 		</Saos>
+		</div>
 	  </div>
 	</section>
 	
@@ -313,8 +315,11 @@ onMount(() => {
 
 </main>
 
+
+
 <style>
 
+.index section {padding-left: calc(2 * var(--padding));}
 #index-top {visibility: hidden;}
 @keyframes -global-zooming {
 	0% {opacity: 0;
@@ -488,11 +493,56 @@ section {position: relative;}
 	#index-fifth {margin-top: 20rem;}
 
 
+	#index-first .wrapper,
+	#index-second .wrapper {position: relative;}
+
+	#index-first .wrapper::after,
+	#index-second .wrapper::before,
+	#index-second .wrapper::after {
+		position: absolute;
+		display: block;
+    	content: "";
+		background-size: cover;
+		top: auto;
+    	bottom: 0;
+    	left: auto;
+    	right: 0;
+	}
+
+	#index-first .wrapper::after {
+		width: 50%;
+    	height: 37.5rem;
+		height: calc((18px * 1.4)+(20px * 1.4)+(20px * 2 * 2.1) + (15px * 3 * 2.5) + (16px * 1.4) + 3.5rem + 1.2rem + 5rem);
+    	background-image: url(/image/about.jpg);
+	}
+
+	#index-second .wrapper::before {
+		top: 2.5rem;
+		right: calc(2 * var(--padding));
+		width: 25%;
+    	height: 45rem;
+    	background-image: url(/image/about.jpg);
+	}
+
+	#index-second .wrapper::after {
+		width: 25%;
+    	height: 45rem;
+		right: var(--padding);
+    	background-image: url(/image/bg.webp);
+	}
+
+
 
 	#index-second .bg {
 		padding: 16rem 0 10rem;
     	padding-left: var(--pcSectionPadding);
     	margin-left: calc(-1 * var(--pcSectionPadding));
+	}
+
+
+	#index-third .exhibitions {
+		width: calc(100vw - var(--pcSectionPadding));
+    	margin-left: 0;
 	}
 
 

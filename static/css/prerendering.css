@@ -24,7 +24,7 @@ header .top svg {
 
 #index-third .swiper-scrollbar {
     height: 1px !important;
-    margin-left: var(--padding);
+    left: var(--padding);
     width: calc( 100vw - var(--padding) * 2);
 }
 
@@ -61,5 +61,13 @@ header .top svg {
 
 
     #index-third .swiper-slide {width: 20vw}
+
+    #index-third .mySwiper {padding-left: 0;}
+
+    #index-third .swiper-scrollbar {
+        left: 0;
+        width: 100%;
+    }
+    
 
 }

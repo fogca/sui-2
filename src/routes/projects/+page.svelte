@@ -193,6 +193,7 @@ export let data;
 	opacity: 1;
 	margin: 2rem 0 3.2rem;
 }
+#pi .wrapper .container:nth-of-type(1) p {width: 87.5%;}
 
 
 

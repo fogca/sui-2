@@ -23,7 +23,7 @@
             window.addEventListener("scroll", () => {
                 if ( currentY < winHeight * .25 ) {/* 50vh以下 */
                     header[0].classList.add('top');
-                } else if ( currentY > winHeight * .25 && currentY < winHeight * 1.25 ) {/* 50vh以上 && 150vh以下*/
+                } else if ( currentY > winHeight * .25 ) {/* 50vh以上 && 150vh以下*/
                     header[0].classList.add('show');
                     header[0].classList.remove('top');
                 } else if (currentY > winHeight * 1.25 ) {/* 150vh以上 */
@@ -46,8 +46,8 @@
 	
 </script>
 
-<header style="display:none;">
-    <div class="pattern">
+<header>
+    <div class="pattern" style="display:none;">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.999" height="740" viewBox="0 0 49.999 740">
             <defs>
               <clipPath id="clip-path">
@@ -91,19 +91,38 @@
 
 header {
     opacity: 0;
-    width: 100vw;
-    height: 5rem;
-    position: absolute;
+    width: var(--padding);
+    height: 100vh;
+    height: 100dvh;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 9;
-    padding: 3rem 0 4rem;
+    padding: 4rem 0;
     transition: .5s ease;
+    background-image: url(image/bg.webp);
+    background-color:rgba(250,252,252,0.95);
+    background-color:rgba(234,234,234,0.95);
+    background-blend-mode:lighten;
+}
+header::after {
+    display: block;
+    content: "";
+    width: 1px;
+    width: .5px;
+    background-color: var(--textColor);
+    background-color: #247878;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: .1;
 }
 .flex-header {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
