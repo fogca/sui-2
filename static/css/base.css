@@ -47,7 +47,7 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, button {
 
 :lang(en) {
     letter-spacing: .005em;/*for astro*/
-    letter-spacing: .125em;
+    letter-spacing: .15em;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
 }
@@ -63,9 +63,9 @@ h6, .h6 {font-size: 1.2rem;}
 
 
 p, .p {
-    line-height: 2.5;
-    font-size: 1.35rem;
-    letter-spacing: 0.25em;
+    line-height: 2.6;
+    font-size: 1.4rem;
+    letter-spacing: 0.3em;
     text-align: left;
 }
 li {text-decoration: none;}

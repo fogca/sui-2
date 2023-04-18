@@ -93,6 +93,15 @@ onMount(() => {
 
 <svelte:head>
 	<title>atelier sui - 蕊 | 心を澄まして聞くかほり</title>
+	<meta name="description" content="心を澄まして聞くかほり | 素材との出会い、抽出、調香まで、小さないのちに内在する響きから、季節や風土のめぐりに触れる香りづくり">
+	<meta property="og:url" content="https://et-cetera.co.jp/"/>
+	<meta property="og:title" content="atelier sui - 蕊 | 心を澄まして聞くかほり"/>
+	<meta property="og:description" content="心を澄まして聞くかほり | 素材との出会い、抽出、調香まで、小さないのちに内在する響きから、季節や風土のめぐりに触れる香りづくり"/>
+	
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="atelier sui - 蕊 | 心を澄まして聞くかほり"/>
+	<meta property="og:image" content="サムネイル画像のURL"/>
+	
 </svelte:head>
 
 
@@ -166,12 +175,12 @@ onMount(() => {
 	  </Saos>
 	  <Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="wrapper">
-		<h2 class="h3">心を澄まして<br>聞くかほり</h2>
+		<h2 class="h2">心を澄まして<br>聞くかほり</h2>
 		<p>素材との出会い、抽出、調香まで<br>
 			小さないのちに内在する響きから<br>
 			季節や風土のめぐりに触れる<br class="sp">香りづくり
 		</p>
-		<a href="/projects" class="h5" lang="en">projects</a>
+		<a href="/projects" class="h5" lang="en">scent projects</a>
 	  </div>
 	  </Saos>
 	</section>
@@ -387,7 +396,7 @@ section {position: relative;}
 }
 #index-second .wrapper .container {margin-bottom: 6rem;}
 #index-second .wrapper .container h2 {
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	margin-left: -0.3px;
 }
 #index-second .container h3 {
@@ -396,10 +405,11 @@ section {position: relative;}
 	opacity: .9;
 }
 #index-second .container p {
-	line-height: 2;
+	font-size: 1.5rem;
+	line-height: 2.2;
 	margin-left: -.5px;
 	opacity: .9;
-	letter-spacing: .45em;
+	letter-spacing: .35em;
 }
 
 
@@ -428,7 +438,7 @@ section {position: relative;}
 	padding-bottom: 15rem;
 	background-image: url(/image/bg.webp);
 	background-size: cover;
-	background-color:rgba(255,255,255,0.7);
+	background-color:rgba(240,240,240,0.75);
 	background-blend-mode:lighten;
 }
 #index-fifth .logo {
