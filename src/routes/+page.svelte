@@ -178,36 +178,35 @@ onMount(() => {
 	<section id="index-second">
 
 	  <div class="bg">
-		<div class="wrapper">
-		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
-			<div class="section-head white">
-			  <div class="h4" lang="en">02.</div>
-			  <h1 class="h3" lang="en">essence</h1>
-			</div>
-		</Saos>
 
 		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
+		<div class="wrapper">
+
+		<div class="section-head white">
+		  <div class="h4" lang="en">02.</div>
+		  <h1 class="h3" lang="en">essence</h1>
+		</div>
+
 	  	<div class="container white">
 			<h2 class="h4">自然の音色を聞く</h2>
 			<h3 class="h4" lang="en">extract</h3>
 			<p>暦や土地によって変化する<br>植物の声に耳を澄まして<br>その本質を抽出</p>
 	  	</div>
-		</Saos>
-		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
+
 	  	<div class="container white">
 			<h2 class="h4">心の声を聞く</h2>
 			<h3 class="h4" lang="en">blend</h3>
 			<p>それぞれの感性をひらき<br>心に響く余韻のある調香</p>
 	  	</div>
-		</Saos>
-		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
+
 	  	<div class="container white">
 			<h2 class="h4">物語を聞く</h2>
 			<h3 class="h4" lang="en">ensemble</h3>
 			<p>体験や空間が纏う空気を掬い<br>ともに奏でるコラボレーション</p>
 	  	</div>
-		</Saos>
 		</div>
+		</Saos>
+
 	  </div>
 	</section>
 	
@@ -242,47 +241,44 @@ onMount(() => {
 
 	<section id="index-fifth">
 		<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <div class="section-head">
-		<div class="h4" lang="en">05.</div>
-		<h1 class="h3" lang="en">about</h1>
-	  </div>
-	  </Saos>
-	  <Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <div class="logo"><TextLogo /></div>
-	  </Saos>
+	 	<div class="section-head">
+			<div class="h4" lang="en">05.</div>
+			<h1 class="h3" lang="en">about</h1>
+	  	</div>
+	  	</Saos>
+	  	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
+	  		<div class="logo"><TextLogo /></div>
+	  	</Saos>
 	  
-	  <div class="paragraph">
-	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <p>
-		2012年創立<br>
-		日本発のナチュラルフレグランスブランド。</p></Saos>
-
-	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <p>
+	  	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
+	  	<div class="paragraph">
+	  	<p>
+			2012年創立<br>
+			日本発のナチュラルフレグランスブランド。
+	  	</p>
+	  	<p>
 		幼少期から音楽を続けていた調香師が、<br>
 		植物の香りと出逢い、情景や記憶との<br>
-		結びつきを体感。</p></Saos>
-
-	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <p>
-		自然に内在する”響き”を奏でるような、<br>
-	  	抽出、調香の実験をはじめました。</p></Saos>
-
-	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <p>
+		結びつきを体感。
+		</p>
+	  	<p>
+			自然に内在する”響き”を奏でるような、<br>
+	  		抽出、調香の実験をはじめました。
+		</p>
+	  	<p>
 	  	日本の豊かな素材と香文化、<br>西洋の歴史ある香水文化。<br>
-	  	それぞれの魅力を織り交ぜた<br>作品を特徴としています。</p></Saos>
-
-	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <p>
-	  風のように偶然性と余白のある、かほり。</p></Saos>
-
-	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
-	  <p>
-	  だからこそ生まれる、人々との共鳴を<br>喜びとし、
-	  おひとりおひとりに<br>届けられたらと願っています。</p></Saos>
-	
+	  	それぞれの魅力を織り交ぜた<br>作品を特徴としています。
+		</p>
+	  	<p>
+	  	風のように偶然性と余白のある、かほり。
+		</p>
+	  	<p>
+		だからこそ生まれる、人々との共鳴を<br>喜びとし、
+	  	おひとりおひとりに<br>届けられたらと願っています。
+		</p>
 	</div>
+	</Saos>
+
 	<Saos once={true} animation={"paragraphy-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="sign"><Sign /></div>
 	</Saos>
@@ -408,9 +404,8 @@ section {position: relative;}
 	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
-#index-second .container {margin-bottom: 6rem;}
-#index-second .container:nth-of-type(3) {margin-bottom: 0;}
-#index-second .container h2 {
+#index-second .wrapper .container {margin-bottom: 6rem;}
+#index-second .wrapper .container h2 {
 	font-size: 1.6rem;
 	margin-left: -0.3px;
 }

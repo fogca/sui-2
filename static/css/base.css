@@ -33,9 +33,9 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* TsukuAOldMinPr6N-R */
+/* TsukuAOldMinPr6-M */
 div, h1, h2, h3, h4, h5, h6, p, a, span, button {
-    font-family: "VNTN", TsukuAOldMinPr6-M, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho', '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
+    font-family: "VNTN", TsukuAOldMinPr6N-R, "FOT-TsukuAOldMin Pr6N", FOT-TsukuMinPro, 'Shippori Mincho', '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro', serif;
     font-weight: 400;
     color: var(--textColor);
     font-display: swap;
