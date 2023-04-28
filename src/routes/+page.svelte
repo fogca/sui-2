@@ -184,12 +184,12 @@ onMount(() => {
 	  </Saos>
 	  <Saos once={true} animation={"scroll-animation 3.5s cubic-bezier(.6,0,.2,1) both"}>
 	  <div class="wrapper">
-		<h2 class="h2">心を澄まして<br>聞くかほり</h2>
+		<h2 class="h1">心を澄まして<br>聞くかほり</h2>
 		<p>素材との出会い、抽出、調香まで<br>
 			小さないのちに内在する響きから<br>
 			季節や風土のめぐりに触れる<br class="sp">香りづくり
 		</p>
-		<p lang="en">
+		<p lang="en" class="h4">
 			Value the encounter with materials, <br>
 			the extraction, and blending, while <br>
 			listening to the sounds of small lives. <br>
@@ -208,27 +208,30 @@ onMount(() => {
 		<Saos once={true} animation={"scroll-animation 3.0s cubic-bezier(.6,0,.2,1) both"}>
 		<div class="wrapper">
 
-		<div class="section-head white">
+		<div class="section-head">
 		  <div class="h4" lang="en">02.</div>
 		  <h1 class="h3" lang="en">essence</h1>
 		</div>
 
-	  	<div class="container white">
-			<h2 class="h4">自然の音色を聞く</h2>
+	  	<div class="container">
+			<h2 class="h3">自然の音色を聞く</h2>
 			<h3 class="h4" lang="en">extract</h3>
 			<p>暦や土地によって変化する<br>植物の声に耳を澄まして<br>その本質を抽出</p>
+			<div lang="en" class="h5">Extracting the essence of plants by listening to the voices of plants that change according to the calendar and the land.</div>
 	  	</div>
 
-	  	<div class="container white">
-			<h2 class="h4">心の声を聞く</h2>
+	  	<div class="container">
+			<h2 class="h3">心の声を聞く</h2>
 			<h3 class="h4" lang="en">blend</h3>
 			<p>それぞれの感性をひらき<br>心に響く余韻のある調香</p>
+			<div lang="en" class="h5">Extracting the essence of plants by listening to the voices of plants that change according to the calendar and the land.</div>
 	  	</div>
 
-	  	<div class="container white">
-			<h2 class="h4">物語を聞く</h2>
+	  	<div class="container">
+			<h2 class="h3">物語を聞く</h2>
 			<h3 class="h4" lang="en">ensemble</h3>
 			<p>体験や空間が纏う空気を掬い<br>ともに奏でるコラボレーション</p>
+			<div lang="en" class="h5">Extracting the essence of plants by listening to the voices of plants that change according to the calendar and the land.</div>
 	  	</div>
 		</div>
 		</Saos>
@@ -384,11 +387,13 @@ section {position: relative;}
     padding-left: 0;
 }
 #index-first .section-head {margin-bottom: 3.5rem;}
-#index-first .wrapper p {margin: 1.2rem 0 5rem;}
+#index-first .wrapper p:nth-of-type(1) {margin-top: 2.5rem;}
+#index-first .wrapper p:nth-of-type(2) {margin: 2rem 0 5rem;}
 
 
 #index-second .section-head {margin-bottom: 6rem;}
 #index-second .bg {
+	position: relative;
 	width: 100vw;
 	margin-left: calc(-1 * var(--padding));
 	padding: 10rem 0 4.5rem;
@@ -397,13 +402,24 @@ section {position: relative;}
 	background-image: url(/image/essence.jpg);
 	background-size: cover;
 }
+#index-second .bg::before {
+  content: '';
+  background-color: rgba(250,252,254,.15);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#index-second .wrapper * {color: var(--backgroundColor);}
 #index-second .wrapper .container {margin-bottom: 6rem;}
 #index-second .wrapper .container h2 {
 	font-size: 1.7rem;
 	margin-left: -0.3px;
 }
 #index-second .container h3 {
-	margin: .25rem 0 1.5rem;
+	margin: .25rem 0 2rem;
 	margin-left: .2px;
 	opacity: .9;
 }
@@ -413,6 +429,11 @@ section {position: relative;}
 	margin-left: -.5px;
 	opacity: .9;
 	letter-spacing: .35em;
+}
+#index-second .container div:lang(en) {
+	width: 72.5%;
+	margin-top: 1.5rem;
+	letter-spacing: 0.1em;
 }
 
 
