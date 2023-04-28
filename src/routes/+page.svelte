@@ -224,14 +224,14 @@ onMount(() => {
 			<h2 class="h3">心の声を聞く</h2>
 			<h3 class="h4" lang="en">blend</h3>
 			<p>それぞれの感性をひらき<br>心に響く余韻のある調香</p>
-			<div lang="en" class="h5">Extracting the essence of plants by listening to the voices of plants that change according to the calendar and the land.</div>
+			<div lang="en" class="h5">A fragrance with a lingering sound that opens each sensibility and resonates in the heart.</div>
 	  	</div>
 
 	  	<div class="container">
 			<h2 class="h3">物語を聞く</h2>
 			<h3 class="h4" lang="en">ensemble</h3>
 			<p>体験や空間が纏う空気を掬い<br>ともに奏でるコラボレーション</p>
-			<div lang="en" class="h5">Extracting the essence of plants by listening to the voices of plants that change according to the calendar and the land.</div>
+			<div lang="en" class="h5">A collaboration that scoops up the atmosphere of experiences and spaces and plays together.</div>
 	  	</div>
 		</div>
 		</Saos>
@@ -524,9 +524,10 @@ section {position: relative;}
     	right: 0;
 	}
 
+	#index-first {padding-right: 0;}
 	#index-first .wrapper::after {
-		width: 50%;
-    	height: 37.5rem;
+		width: 60%;
+    	height: 60rem;
 		height: calc((18px * 1.4)+(20px * 1.4)+(20px * 2 * 2.1) + (15px * 3 * 2.5) + (16px * 1.4) + 3.5rem + 1.2rem + 5rem);
     	background-image: url(/image/about.jpg);
 	}

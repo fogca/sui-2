@@ -82,6 +82,7 @@ $: $page.url && (clicked = false);
     <div class="flex-header">
         <div class="top">
             <a href="/projects" class="h4" lang="en">scent projects</a>
+            <a href="https://www.instagram.com/sari_____kahoritotomoni/" class="h4" lang="en">instagram</a>
         </div>
 
         <div class="bottom">
@@ -112,6 +113,7 @@ $: $page.url && (clicked = false);
 .flex-header a {
     text-orientation: sideways;
     writing-mode: vertical-rl;
+    margin-bottom: 2rem;
 }
 
 .bottom {
