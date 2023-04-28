@@ -189,7 +189,14 @@ onMount(() => {
 			小さないのちに内在する響きから<br>
 			季節や風土のめぐりに触れる<br class="sp">香りづくり
 		</p>
-		<a href="/projects" class="h5" lang="en">scent projects</a>
+		<p lang="en">
+			Value the encounter with materials, <br>
+			the extraction, and blending, while <br>
+			listening to the sounds of small lives. <br>
+			From there, create scent by feeling the <br>
+			nature and the season.
+		</p>
+		<a href="/projects" class="h4" lang="en">scent projects</a>
 	  </div>
 	  </Saos>
 	</section>
@@ -524,6 +531,7 @@ section {position: relative;}
 		padding: 16rem 0 10rem;
     	padding-left: var(--pcSectionPadding);
     	margin-left: calc(-1 * var(--pcSectionPadding));
+		margin-left: calc(-1.9 * var(--padding));
 	}
 
 
@@ -537,6 +545,8 @@ section {position: relative;}
     	width: 35vw;
     	margin-left: 0;
   	}
+
+	#index-fifth {padding-left: calc(2 * var(--padding));}
 	
 
 }

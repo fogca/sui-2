@@ -206,7 +206,13 @@ header .pattern svg {
 .open-button.clicked span:nth-of-type(2) {transform: rotate(-20deg) translateY(-4.0px) scale(1.2);}
 
 
+@media screen and (min-width: 720px) {
+    
+    
+    header {display: none;}
 
+
+}
 
 
 @keyframes -global-header-logo {

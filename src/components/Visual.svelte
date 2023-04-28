@@ -1,13 +1,11 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/svelte';
-import { EffectFade, Pagination } from 'swiper';
-import { Autoplay } from 'swiper/core';  
+import { Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css';
-import Saos from 'saos';
 
-const items = [
+const visual = [
   {
     img: "../image/monochrome.jpg"
   },
@@ -23,17 +21,18 @@ const items = [
 
 
 <Swiper
+    slidesPerView={1}
+    speed={4000}
     loop={true}
     autoplay={{
-        delay: 5000,
-        disableOnInteraction: true
+      delay: 5000,
+      disableOnInteraction: true
     }}
     pagination={{ clickable: true }}
-    speed={5000}
     modules="{[EffectFade, Autoplay, Pagination]}" effect="fade"
   >
 
-  {#each items as item, i}
+  {#each visual as item, i}
     <SwiperSlide>
       <div class="swiper-slide">
         <img src={ item.img } alt="">

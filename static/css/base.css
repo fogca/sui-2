@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'VNTND';
-    src: url(font/Venetian301DmBT-Regular.woff2) format('woff2');    
+    src: url(/font/Venetian301DmBT-Regular.woff2) format('woff2');    
 }
 
 :root {
@@ -68,6 +68,14 @@ p, .p {
     letter-spacing: 0.3em;
     text-align: left;
 }
+p:lang(en) {
+    font-family: 'VNTND', serif;
+    line-height: 2.0;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+}
+
+
 li {text-decoration: none;}
 a {
     text-decoration: none;
@@ -107,7 +115,7 @@ section {padding: 0 var(--padding);}
 @media screen and (min-width: 720px) {
 
     :root {
-        --padding: 12.5vw;
+        --padding: 14.5vw;
     }
 
     html {font-size: 56.5%;}
